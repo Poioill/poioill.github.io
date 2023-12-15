@@ -185,7 +185,7 @@ body{
 }
 .menu-item span{
     padding: 0 30px 0 0;
-    background: url('/layout/images/game.svg') 100% 3px no-repeat;
+    background: url('/images/game.svg') 100% 3px no-repeat;
 }
 .menu-item .submenu:hover{
     animation: fadeInDown 0.7s ease-in-out forwards;
