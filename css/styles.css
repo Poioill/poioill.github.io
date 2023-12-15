@@ -1,0 +1,372 @@
+/* Обнуление */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font-weight: 300;
+    line-height: normal;
+}
+body {
+    line-height:1;
+}
+::-ms-clear{display: none;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    color: #D9D9D9;
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+ol li{list-style: none;}
+input, select {
+    vertical-align:middle;
+}
+* {box-sizing: border-box; text-decoration: none;}
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* =main================================================================== */
+body{
+    background-color: #0D1321;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 20px;
+    color: #D9D9D9;
+}
+.wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.wrapper__{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 1512px;
+    margin: 0 auto;
+    
+}
+.image{
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ==header============= */
+.header{
+    padding: 10px 0 0 70px;
+    width: 300px;
+    height: 100%;
+}
+.header_menu_close_btn{
+    width: 34px;
+    text-align: right;
+    right: 0;
+    margin-left: 80%;
+}
+.title a{
+    padding: 50px 0 0 0;
+    position: absolute;
+    font-family: 'Quantico', sans-serif;
+    font-size: 30px;
+    letter-spacing: -1.5px;
+}
+.title a:hover{
+    color: #51ff63;
+    transition-duration: 0.3s;
+}
+.header nav{
+    padding-top: 170px;
+}
+.header nav ul li:not(:last-child){
+    margin-bottom: 32px;
+}
+.header nav ul li a{
+    white-space: nowrap;
+}
+.header nav ul li a:hover{
+    transition-duration: 0.28s;
+    color: #704DFF;
+    text-decoration-line: underline;
+}
+.header__drop-game{
+    position: relative;
+    display: inline-block;
+}
+.header__drop-game button{
+    border: none;
+    color: #D9D9D9;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Oxanium', sans-serif;
+    background-color: transparent;
+}
+.header__drop-game button:hover{
+    transition-duration: 0.4s;
+    color: #704DFF;
+    cursor: pointer;
+}
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+.header__drop-game:hover .dropdown-menu{
+    transition-duration: 0.4s;
+    display: block;
+}
+
+.submenu{
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+.menu-item:hover{
+    cursor: pointer;
+    transition-duration: 0.8s;
+}
+.menu-item:hover span{
+    color: #704DFF;
+}
+.menu-item span{
+    padding: 0 30px 0 0;
+    background: url('/layout/images/game.svg') 100% 3px no-repeat;
+}
+.menu-item .submenu:hover{
+    animation: fadeInDown 0.7s ease-in-out forwards;
+}
+
+.submenu a{
+    display: block;
+    font-size: 0;
+    margin-bottom: 30px;
+}
+
+.menu-item:hover .sub-3{
+    animation: fadeInUp3 0.7s ease-in-out forwards;
+}
+.menu-item:hover .sub-2{
+    animation: fadeInUp2 0.6s ease-in-out forwards;
+}
+.menu-item:hover .sub-1{
+    animation: fadeInUp1 0.5s ease-in-out forwards;
+}
+.menu-item:hover .submenu {
+    display: block;
+    transition-duration: 0.4s;
+    animation: fadeInUp 0.7s ease-in-out forwards;
+}
+
+@keyframes fadeInDown {
+0% {
+    transform: translateY();
+}
+100% {
+    transform: translateY(0);
+}
+}
+
+@keyframes fadeInUp {
+0% {
+    transform: translateY(-10px);
+    }
+100% {
+    transform: translateY(10px);
+}
+}
+@keyframes fadeInUp3 {
+0% {
+    opacity: 0;
+    transform: translateY(-130px);
+    }
+50% {
+    opacity: 0.3;
+    }
+100% {
+    opacity: 1;
+    transform: translateY(10px);
+    font-size: 20px;
+}
+}
+@keyframes fadeInUp2 {
+0% {
+    opacity: 0;
+    transform: translateY(-80px);
+    }
+50% {
+    opacity: 0.3;
+    }
+100% {
+    opacity: 1;
+    transform: translateY(10px);
+    font-size: 20px;
+}
+}
+@keyframes fadeInUp1 {
+0% {
+    opacity: 0;
+    transform: translateY(-10px);
+    }
+100% {
+    opacity: 1;
+    transform: translateY(10px);
+    font-size: 20px;
+}
+}
+
+/* ====collapsed menu==== */
+.menu {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    transition: width 0.3s;
+    overflow: hidden;
+}
+
+.collapsed {
+    width: 150px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.header_menu_close_btn {
+    cursor: pointer;
+    transition: transform 0.6s;
+    transform: rotate(0deg);
+    margin-top: 20px;
+}
+
+.collapsed .header_menu_close_btn {
+    transform: rotate(180deg);
+    margin: 20px auto;
+}
+
+.collapsed .header_menu_close_btn {
+    transform: rotate(180deg);
+    margin: 20px auto;
+}
+
+.collapsed #hide_menu{
+    animation: disappearing 0.3s ease-in forwards;
+}
+
+@keyframes disappearing {
+    0% {
+        display: block;
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.05;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+    }
+
+#open_menu{
+    display: none;
+    width: 0;
+}
+#icon-home:hover{
+    content: url('/layout/images/homeF.svg');
+}
+#icon-me:hover{
+    content: url('/layout/images/aboutMeF.svg');
+}
+#icon-portfolio:hover{
+    content: url('/layout/images/portfolioF.svg');
+}
+#icon-gallery:hover{
+    content: url('/layout/images/galleryF.svg');
+}
+#icon-game:hover{
+    content: url('/layout/images/game2.svg');
+}
+.collapsed #open_menu{
+    display: block;
+    animation: appearing 0.5s ease-in forwards;
+}
+
+@keyframes appearing {
+    0% {
+        opacity: 0;
+        display: none;
+        width: 0;
+    }
+    70%{
+        width: 24px;
+        opacity: 0;
+    }
+    100% {
+        width: 28px;
+        opacity: 1;
+        display: block;
+        margin-left: -20px;
+    }
+    }
+
+.black{
+    width: 150px;
+    position: absolute;
+    height: 100vh;
+    top: 0;left: 0;
+    object-fit: cover;
+    z-index: -1;
+    background-color: #0D1321;
+}

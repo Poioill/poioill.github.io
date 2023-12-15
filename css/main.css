@@ -1,0 +1,93 @@
+.image{
+    background: url("/layout/images/backMainSvg.svg");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ===main====================== */
+.main{
+    margin: 180px 0 0 55px;
+    color: #E6E5E5;
+}
+.main__intro{
+    max-width: 775px;
+}
+.intro__text__wrapper{
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px 20px;
+    backdrop-filter: blur(3.5px);
+}
+.intro__title{
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 25px;
+    letter-spacing: -2px;
+}
+.intro__text{
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 1.45;
+}
+.main__slider{
+    margin-top: 65px;
+    width: 1220px;
+    position: relative;
+}
+
+/* slick slider */
+.slick-list{
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+}
+
+.slider-clicker{
+    display: flex;
+    margin-bottom: 20px;
+}
+.slider-clicker p{
+    margin-right: 20px;
+}
+.arrows {
+    margin-top: 6px;
+}
+.arrows .slick-arrow{
+    border: none;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+.arrows .slick-prev{
+    background: url('/layout/images/slider-arrow.svg') 0 0 no-repeat;
+}
+.arrows .slick-prev:hover, .arrows .slick-next:hover{
+    cursor: pointer;
+    filter: brightness(0.7);
+    transition-duration: 0.4s;
+}
+.arrows .slick-next{
+    margin: 0 0 0 20px;
+    background: url('/layout/images/slider-arrow-next.svg') 0 0 no-repeat;
+}
+/* TRYINGS */
+.img{
+    width: 180px;
+    height: 117px;
+    background: #F30F38;
+    margin-bottom: 20px;
+}
+.img2{
+    width: 180px;
+    height: 117px;
+    background: #ba1aff;
+    margin-bottom: 20px;
+}
+.tett{
+    font-size: 18px;
+    letter-spacing: -0.9px;
+}
+/* TRYINGS END */
+
