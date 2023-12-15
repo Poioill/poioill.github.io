@@ -324,19 +324,19 @@ body{
     width: 0;
 }
 #icon-home:hover{
-    content: url('/layout/images/homeF.svg');
+    content: url('./images/homeF.svg');
 }
 #icon-me:hover{
-    content: url('/layout/images/aboutMeF.svg');
+    content: url('./images/aboutMeF.svg');
 }
 #icon-portfolio:hover{
-    content: url('/layout/images/portfolioF.svg');
+    content: url('./images/portfolioF.svg');
 }
 #icon-gallery:hover{
-    content: url('/layout/images/galleryF.svg');
+    content: url('./images/galleryF.svg');
 }
 #icon-game:hover{
-    content: url('/layout/images/game2.svg');
+    content: url('./images/game2.svg');
 }
 .collapsed #open_menu{
     display: block;
