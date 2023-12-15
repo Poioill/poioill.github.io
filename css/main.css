@@ -74,10 +74,14 @@
 }
 /* TRYINGS */
 .img{
-    width: 180px;
+    width: inherit;
     height: 117px;
-    background: #F30F38;
+    margin-right: 20px;
+    border: 1px solid #F30F38;
+    padding: 5px;
     margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 .img2{
     width: 180px;
