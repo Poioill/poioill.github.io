@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+    </style>
+</head>
+<body>
+    <div class="wrapper image">
+        <div class="wrapper__">
+            <header class="header menu" id="collapsibleMenu">
+                <div class="header_menu_close_btn arrow-icon" id="toggleButton">
+                    <img src="/layout/images/menuArrow.svg" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li id="hide_menu"><a href="mainPage.html">Home page</a></li>
+                        <li id="hide_menu"><a href="aboutme.html">Who am I</a></li>
+                        <li id="hide_menu"><a href="portfolio.html">Portfolio</a></li>
+                        <li id="hide_menu"><a href="gallery.html">Gallery</a></li>
+                        <li id="hide_menu">
+                            <div class="header__drop-game">
+                                <div class="menu-item" id="games">
+                                    <span>Games</span>
+                                    <div class="submenu">
+                                        <a href="game1.html" class="sub-1">- Pac-Man</a>
+                                        <a href="game2.html" class="sub-2">- Snake</a>
+                                        <a href="game3.html" class="sub-3">- Pong-ish</a>
+                                    </div>
+                               </div>
+                            </div>
+                        </li>
+                        <li id="open_menu"><a href="mainPage.html">
+                            <img id="icon-home" src="./images/home.svg" alt="">
+                        </a></li>
+                        <li id="open_menu"><a href="aboutme.html">
+                            <img id="icon-me" src="./images/aboutme.svg" alt="">
+                        </a></li>
+                        <li id="open_menu"><a href="portfolio.html">
+                            <img id="icon-portfolio" src="./images/portfolio.svg" alt="">
+                        </a></li>
+                        <li id="open_menu"><a href="gallery.html">
+                            <img id="icon-gallery" src="./images/gallery.svg" alt="">
+                        </a></li>
+                        <li id="open_menu">
+                            <div class="header__drop-game">
+                                <div class="menu-item" id="games">
+                                    <img id="icon-game" src="./images/gameNotf.svg" alt="">
+                                    <div class="submenu">
+                                        <a href="game1.html" class="sub-1">1</a>
+                                        <a href="game2.html" class="sub-2">2</a>
+                                        <a href="game3.html" class="sub-3">3</a>
+                                    </div>
+                               </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main">
+                <div class="introuduction">
+                    <h2 class="intro__title">Pac-man</h2>
+                    <p class="intro__text">The purpose of the game Pac-Man is for the player to control a character, Pac-Man, and navigate a maze, eating all the pellets while avoiding ghosts. The goal is to clear the maze of pellets and advance to the next level, accumulating points, while dealing with the challenges posed by the ghosts.</p>    
+                    <br>
+                    <div class="">
+                        <canvas id="canvas" width="420" height="500"></canvas>
+                        <div style="display:none;">
+                            <img id="animation" src="/pacman/animations.gif" width="140" height="20">
+                            <img id="ghosts" src="/pacman/ghost.png" width="140" height="20">
+                        </div> 
+                    </div>
+                </div>
+            </main>            
+        </div>
+    </div>
+
+    <script src="/pacman/ghost.js"></script>
+    <script src="/pacman/pacman.js"></script>
+    <script src="/pacman/game.js"></script>
+    <script src="./js/styles.js"></script>
+</body>
+</html>

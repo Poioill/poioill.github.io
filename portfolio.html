@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+    </style>
+</head>
+<body>
+    <div class="wrapper image">
+        <!-- <div class="black"></div> -->
+        <div class="wrapper__">
+            <header class="header menu" id="collapsibleMenu">
+                <div class="header_menu_close_btn arrow-icon" id="toggleButton">
+                    <img src="/layout/images/menuArrow.svg" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li id="hide_menu"><a href="mainPage.html">Home page</a></li>
+                        <li id="hide_menu"><a href="aboutme.html">Who am I</a></li>
+                        <li id="hide_menu"><a href="portfolio.html">Portfolio</a></li>
+                        <li id="hide_menu"><a href="gallery.html">Gallery</a></li>
+                        <li id="hide_menu">
+                            <div class="header__drop-game">
+                                <div class="menu-item" id="games">
+                                    <span>Games</span>
+                                    <div class="submenu">
+                                        <a href="game1.html" class="sub-1">- Pac-Man</a>
+                                        <a href="game2.html" class="sub-2">- Snake</a>
+                                        <a href="game3.html" class="sub-3">- Pong-ish</a>
+                                    </div>
+                               </div>
+                            </div>
+                        </li>
+                        <li id="open_menu"><a href="mainPage.html">
+                            <img id="icon-home" src="./images/home.svg" alt="">
+                        </a></li>
+                        <li id="open_menu"><a href="aboutme.html">
+                            <img id="icon-me" src="./images/aboutme.svg" alt="">
+                        </a></li>
+                        <li id="open_menu"><a href="portfolio.html">
+                            <img id="icon-portfolio" src="./images/portfolio.svg" alt="">
+                        </a></li>
+                        <li id="open_menu"><a href="gallery.html">
+                            <img id="icon-gallery" src="./images/gallery.svg" alt="">
+                        </a></li>
+                        <li id="open_menu">
+                            <div class="header__drop-game">
+                                <div class="menu-item" id="games">
+                                    <img id="icon-game" src="./images/gameNotf.svg" alt="">
+                                    <div class="submenu">
+                                        <a href="game1.html" class="sub-1">1</a>
+                                        <a href="game2.html" class="sub-2">2</a>
+                                        <a href="game3.html" class="sub-3">3</a>
+                                    </div>
+                               </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main">
+                <div class="introuduction">
+                    <h2 class="intro__title">Portfolio</h2>
+                    <p class="intro__text">This is a simple game where all you need is just eat all little yellow balls trying not to encounter with those who can eat you. In this case you will lose.</p>    
+                </div>
+                <div id="filterForm">
+                    <p>Filter by:</p>
+                    <label class="filter__label" for="languageSelect">Programming Languages:</label>
+                    <select id="languageSelect">
+                      <option value="all">All</option>
+                      <option value="Java">Java</option>
+                      <option value="Python">Python</option>
+                      <option value="Javascript">Javascript</option>
+                    </select>
+                    <br>
+                    <label class="filter__label" for="specialtySelect">Specialty:</label>
+                    <select id="specialtySelect">
+                      <option value="all">All</option>
+                      <option value="Back-end">Back-end</option>
+                      <option value="Front-end">Front-end</option>
+                      <option value="Game">Game</option>
+                      <option value="Other">Other</option>
+                    </select>
+                    <br>
+                    <button id="filterButton">Show</button>
+                    <button id="resetButton">Reset</button>
+                  </div>
+                
+                  <div id="results">
+                    <div class="result" data-language="Java" data-specialty="Game">
+                        <a href="https://github.com/Poioill/Snake">
+                            <div class="result_img">
+                                <img src="./images/img/snake.png" alt="">
+                            </div>
+                            <p class="item_title">Snake game</p>
+                            <p class="item__tools">Java</p>
+                        </a>
+                    </div>
+                    <div class="result" data-language="Java" data-specialty="Back-end">
+                        <a href="https://github.com/Poioill/Snake">
+                            <div class="result_img">
+                                <img src="./images/img/snake.png" alt="">
+                            </div>
+                            <p class="item_title">Snake game</p>
+                            <p class="item__tools">Java</p>
+                        </a>
+                    </div>
+                    <div class="result" data-language="Java" data-specialty="Game">
+                        <a href="https://github.com/Poioill/Snake">
+                            <div class="result_img">
+                                <img src="./images/img/snake.png" alt="">
+                            </div>
+                            <p class="item_title">Snake game</p>
+                            <p class="item__tools">Java</p>
+                        </a>
+                    </div>
+                    <div class="result" data-language="Java" data-specialty="Game">
+                        <a href="https://github.com/Poioill/Snake">
+                            <div class="result_img">
+                                <img src="./images/img/snake.png" alt="">
+                            </div>
+                            <p class="item_title">Snake game</p>
+                            <p class="item__tools">Java</p>
+                        </a>
+                    </div>
+                    <div class="result" data-language="Java" data-specialty="Game">
+                        <a href="https://github.com/Poioill/Snake">
+                            <div class="result_img">
+                                <img src="./images/img/snake.png" alt="">
+                            </div>
+                            <p class="item_title">Snake game</p>
+                            <p class="item__tools">Java</p>
+                        </a>
+                    </div>
+                    <div class="result" data-language="Java" data-specialty="Game">
+                        <a href="https://github.com/Poioill/Snake">
+                            <div class="result_img">
+                                <img src="./images/img/snake.png" alt="">
+                            </div>
+                            <p class="item_title">Snake game</p>
+                            <p class="item__tools">Java</p>
+                        </a>
+                    </div>
+                  </div>
+            </main>            
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/styles.js"></script>
+</body>
+</html>
