@@ -1,5 +1,5 @@
 .image{
-    background: url("/layout/images/backMainSvg.svg");
+    background: url("./images/backMainSvg.svg");
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@
     position: absolute;
 }
 .arrows .slick-prev{
-    background: url('/layout/images/slider-arrow.svg') 0 0 no-repeat;
+    background: url('./images/slider-arrow.svg') 0 0 no-repeat;
 }
 .arrows .slick-prev:hover, .arrows .slick-next:hover{
     cursor: pointer;
@@ -70,7 +70,7 @@
 }
 .arrows .slick-next{
     margin: 0 0 0 20px;
-    background: url('/layout/images/slider-arrow-next.svg') 0 0 no-repeat;
+    background: url('./images/slider-arrow-next.svg') 0 0 no-repeat;
 }
 /* TRYINGS */
 .img{
